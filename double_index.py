@@ -1,7 +1,8 @@
 """双指针应用"""
 
 
-"""删除数组中指定值"""
+# leetcode_27:
+# Given an integer array nums and an integer val, remove all occurrences of val in nums in-place.
 
 
 def remove_element(nums, val):
@@ -15,7 +16,9 @@ def remove_element(nums, val):
     return i_2
 
 
-"""平方排序"""
+# leetcode_977:
+# Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted
+# in non-decreasing order.
 
 
 def sorted_squares(nums):

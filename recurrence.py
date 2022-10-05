@@ -1,7 +1,7 @@
 """recurrence: 递归"""
 
 
-"""Fibonacci"""
+# Fibonacci using recurrence
 
 
 def fibo(self, n):

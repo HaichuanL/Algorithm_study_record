@@ -1,6 +1,6 @@
 class Algo:
-    """"""
-    '''Fibonacci'''
+
+    """Fibonacci"""
     def fibo(self, n):
         if n <= 0:
             return 0
@@ -18,18 +18,11 @@ class Algo:
         else:
             return self.fibo_v2(self, first=second, second=first+second, n=n-1)
 
-    '''Binary search 二分查找(v1:左闭右闭，v2:左闭右开)
+    """Binary search 二分查找(v1:左闭右闭，v2:左闭右开)
         tip1: 升序排列
         tip2: 无重复数据
-        tip3: 时间复杂度为 O(logn)(计算最复杂的情况)'''
+        tip3: 时间复杂度为 O(logn)(计算最复杂的情况)"""
     def binary_search_v1(self, nums, target):
-        """
-            704: https://leetcode.cn/problems/binary-search/
-            :type nums: List[int]
-            :type target: int
-            :rtype: int
-            :vision: 1
-        """
         left = 0
         right = len(nums) - 1
         while left <= right:
@@ -43,13 +36,6 @@ class Algo:
         return -1
 
     def binary_search_v2(self, nums, target):
-        """
-            704: https://leetcode.cn/problems/binary-search/
-            :type nums: List[int]
-            :type target: int
-            :rtype: int
-            :vision: 2
-        """
         left = 0
         right = len(nums) - 1
         while left < right:
@@ -64,11 +50,6 @@ class Algo:
 
     # binary_search leetcode_35
     def searchInsert(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: int
-        """
         l = 0
         r = len(nums) - 1
         if target in nums:
@@ -151,17 +132,18 @@ if __name__ == '__main__':
     # bi_v2 = algo.binary_search_v1(algo, nums, target)
     # print(bi_v1)
     # print(bi_v2)
-    '''removeElement: 双指针'''
+    '''removeElement(双指针)'''
     # nums = [4, 56, 78, 90, 299, 576, 2348, 7890]
     # print('origin nums:', nums)
     # val = 576
     # rem = algo.removeElement(algo, nums, val)
     # print('result:', nums)
     # print(rem)
-    '''sortedSquares：双指针应用, 冒泡排序'''
+    '''sortedSquares(1.双指针应用, 2.冒泡排序)'''
     # nums = [-444, -56, -8, 90, 299, 576, 2348, 7890]
     # ans_double = algo.sortedSquares_double(algo, nums)
     # ans_bubble = algo.sortedSquares_bubble(algo, nums)
     # print(f'ans_double is : {ans_double}, time complexity: O(n)')
     # print(f'ans_bubble is : {ans_bubble}, time complexity: O(n**2)')
+
 
